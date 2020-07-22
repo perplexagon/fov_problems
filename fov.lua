@@ -136,7 +136,7 @@ function refresh_octant(location, octant)
       }
     if not in_world_map(position) then break end
 
-    for col = 0, row + 1 do
+    for col = 0, row do
       local transformed_octant = transform_octant({x=row, y=col}, octant)
       local position = {
           x = location.x + transformed_octant.x,
